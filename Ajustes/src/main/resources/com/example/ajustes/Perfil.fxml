@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ajustes.Perfil">
+   <children>
+      <Label fx:id="bienvenidaLabel" layoutX="272.0" layoutY="127.0" prefHeight="49.0" prefWidth="200.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Text fx:id="inf" layoutX="243.0" layoutY="304.0" onMouseClicked="#mostrarInformacion" strokeType="OUTSIDE" strokeWidth="0.0" text="Información Personal" wrappingWidth="207.05462646484375" />
+      <Circle fill="#ffffff00" layoutX="124.0" layoutY="168.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fx:id="actualizarImagen" fill="#0037ff" fontSmoothingType="LCD" layoutX="70.0" layoutY="295.0" onMouseClicked="#actualizarImagenClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Actualizar imagen" underline="true" />
+      <ImageView fx:id="fotoPerfilImageView" fitHeight="154.0" fitWidth="154.0" layoutX="46.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+      <MenuBar prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="272.0" layoutY="217.0" prefHeight="28.0" prefWidth="283.0" text="Bienvenido a tu espacio personal">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Text fx:id="modinf" layoutX="243.0" layoutY="354.0" onMouseClicked="#modificarInformacion" strokeType="OUTSIDE" strokeWidth="0.0" text="Modificar Información Personal" wrappingWidth="207.05462646484375" />
+      <Text fx:id="cambContr" layoutX="243.0" layoutY="405.0" onMouseClicked="#cambiarContrasena" strokeType="OUTSIDE" strokeWidth="0.0" text="Cambiar Contraseña" wrappingWidth="207.05462646484375" />
+      <Text fx:id="elimCuenta" layoutX="243.0" layoutY="537.0" onMouseClicked="#eliminarCuenta" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar Cuenta" wrappingWidth="207.05462646484375" />
+      <Text fx:id="cerrarSesion" layoutX="243.0" layoutY="490.0" onMouseClicked="#cerrarSesión" strokeType="OUTSIDE" strokeWidth="0.0" text="Cerrar Sesión" wrappingWidth="207.05462646484375" />
+      <Text fx:id="gruposPertenezco" layoutX="243.0" layoutY="447.0" onMouseClicked="#mostrarGruposPertenece" strokeType="OUTSIDE" strokeWidth="0.0" text="Grupos a los que pertenezco" wrappingWidth="207.05462646484375" />
+   </children>
+</AnchorPane>
